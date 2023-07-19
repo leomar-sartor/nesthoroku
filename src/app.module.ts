@@ -10,6 +10,8 @@ import { TesteResolver } from './Teste/teste.resolver';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
+      introspection: true,
+      playground: true,
     }),
   ],
   //controllers: [AppController],
